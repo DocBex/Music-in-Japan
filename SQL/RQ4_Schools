@@ -1,0 +1,27 @@
+SELECT *
+FROM `music-508907.School.School` 
+ORDER BY Junior_and_High_Schools_Total DESC
+
+-Query 1-
+
+-------------------------------------------------------------------------------
+
+SELECT
+  Prefecture,
+  Junior_High_Schools_Total,
+  High_Schools_Total,
+  ROUND(Junior_High_Schools_Total / High_Schools_Total, 2) AS School_Ratio 
+  FROM `music-508907.School.School` 
+  ORDER BY School_Ratio DESC
+
+-Query 2-
+
+-------------------------------------------------------------------------------
+
+SELECT 
+  Prefecture,
+  Junior_and_High_Schools_Total
+FROM `music-508907.School.School` 
+ORDER BY Junior_and_High_Schools_Total DESC
+
+-Query 3-
