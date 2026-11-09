@@ -1,0 +1,9 @@
+SELECT
+  Region,
+  Playing_Musical_Instruments
+FROM `music-508907.SLS_Music.SLS_Music`
+WHERE
+  Age = '0_Total'
+  AND Usual_Employment_Status = '0_Total'
+  AND Region NOT LIKE 'Japan%'
+ORDER BY Playing_Musical_Instruments DESC
