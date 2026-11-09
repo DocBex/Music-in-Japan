@@ -1,0 +1,47 @@
+SELECT distinct
+  Age
+FROM `music-508907.SLS_Music.SLS_Music`
+
+-Query 1-
+
+--------------------------------------------------
+
+SELECT distinct
+  Usual_Employment_Status
+FROM `music-508907.SLS_Music.SLS_Music`
+
+-Query 2-
+
+---------------------------------------------------
+
+SELECT distinct
+  Age,
+  Usual_Employment_Status,
+  Playing_Musical_Instruments
+FROM `music-508907.SLS_Music.SLS_Music`
+WHERE
+  Age IN (
+  '1_15–24 years',
+  '2_25–34 years',
+  '3_35–44 years',
+  '4_45–54 years',
+  '5_55–64 years',
+  '6_65–74 years',
+  '7_75 years and over'
+)
+AND
+  Usual_Employment_Status IN (
+    '11_Mainly working',
+    '12_Working while mainly doing housework etc.',
+    '13_Working while attending school',
+    '21_Housework',
+    '22_Attending school',
+    '23_Other'
+  )
+AND
+  Region IN ('Japan (Total)')
+AND
+  Playing_Musical_Instruments IS NOT NULL
+ORDER BY Playing_Musical_Instruments DESC
+
+-Query 3-
