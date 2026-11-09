@@ -1,0 +1,26 @@
+SELECT
+  CORR(Popular_Music_Concerts, Playing_Musical_Instruments) AS Popular_Coeff, 
+  CORR(Classical_Concerts, Playing_Musical_Instruments) AS Classical_Coeff
+FROM `music-508907.SLS_Music.SLS_Music`
+WHERE
+  Age = '0_Total'
+  AND Usual_Employment_Status = '0_Total'
+  AND Region NOT LIKE 'Japan%'  
+
+-Query 1-
+
+---------------------------------------------------------------------------------------
+
+SELECT
+  Classical_Concerts,
+  Popular_Music_Concerts,
+  Playing_Musical_Instruments,
+  Region
+FROM `music-508907.SLS_Music.SLS_Music`
+WHERE
+  Age = '0_Total'
+  AND Usual_Employment_Status = '0_Total'
+  AND Region NOT LIKE 'Japan%'
+ORDER BY Playing_Musical_Instruments DESC
+
+-Query 2- 
