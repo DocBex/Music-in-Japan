@@ -20,7 +20,7 @@ The complete project documentation includes the research questions, data prepara
 
 The SQL queries used to analyze the research questions are available below:
 
-- [RQ1 – Regional perspective](RQ1_Regional)
-- [RQ2 – Musical perspective](RQ2_Musical)
-- [RQ3 – People perspective](RQ3_People)
+- [RQ1 – Regional perspective](SQL/RQ1_Regional)
+- [RQ2 – Musical perspective](SQL/RQ2_Musical)
+- [RQ3 – People perspective](SQL/RQ3_People)
 - [RQ4 – School Landscape](SQL/RQ4_Schools)
