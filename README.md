@@ -23,4 +23,4 @@ The SQL queries used to analyze the research questions are available below:
 - [RQ1 – Regional perspective](RQ1_Regional.sql)
 - [RQ2 – Musical perspective](RQ2_Musical.sql)
 - [RQ3 – People perspective](RQ3_People.sql)
-- [RQ4 – School Landscape](RQ4_Schools.sql)
+- [RQ4 – School Landscape](SQL/RQ4_Schools)
